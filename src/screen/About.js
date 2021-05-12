@@ -14,7 +14,7 @@ class About extends Component {
 <br />
 “Safari Camp Osian” is the permanent base camp at Osian. The Camp is nestled in the dunes, and is a short cross country drive into the desert from the Osian Village. Apart from the most clear night skies you may have ever seen, you also get to see the most beautiful desert sunsets and sunrise from the camp.
 <br />
-Enjoying the setting sun while sipping Champagne on the dunes, will go a long way down memory lane.
+Enjoying the setting sun while hello sipping Champagne on the dunes, will go a long way down memory lane.
 <br />
                     <br />
 “Camping in Style” …  The tents are comfortable and spacious. Interiors are tastefully designed employing rural artisans in handicrafts and printing. These tents are luxury Swiss Cottages, with en-suite toilets, hot and cold showers and all modern amenities.
