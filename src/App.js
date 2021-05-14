@@ -12,33 +12,34 @@ import About from './screen/About';
 import Image from './screen/Image';
 import Contect2 from './screen/Contact2'
 
+import { Button, Checkbox } from '@material-ui/core'
+
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-        selectedButton: '',
-        
-        
+      selectedButton: '',
+      isChecked: false
+
 
     }
-}
-  renderScreen()
-  {
-    if(this.state.selectedButton=="Home"){
-return<Home/>
-    }else if(this.state.selectedButton=="About"){
-      return<About/>
+  }
+  renderScreen() {
+    if (this.state.selectedButton == "Home") {
+      return <Home />
+    } else if (this.state.selectedButton == "About") {
+      return <About />
     }
-    else if(this.state.selectedButton=="Img"){
-      return<Image/>
+    else if (this.state.selectedButton == "Img") {
+      return <Image />
     }
-    else if(this.state.selectedButton=="Contect2"){
-      return<Contect2/>
+    else if (this.state.selectedButton == "Contect2") {
+      return <Contect2 />
     }
-    else{
-      return<Socil/>
+    else {
+      return <Socil />
     }
-   
+
   }
 
   render() {
@@ -46,10 +47,16 @@ return<Home/>
       <div className="App">
         <header className="App-header">
           {<LogoComp />}
+          <Button variant="contained">Default</Button>
+          <Checkbox
+            checked={this.state.isChecked}
+            onChange={() => { this.setState({ isChecked: true }) }}
+            inputProps={{ 'aria-label': 'primary checkbox' }}
+          />
           <Contact
-         onClick={(v) =>{ this.setState({ selectedButton: v })}}/>
+            onClick={(v) => { this.setState({ selectedButton: v }) }} />
           {this.renderScreen()}
-      
+
 
           {/* {<Socil 
             onClickIcon={(valuell) => alert(valuell)}
@@ -67,7 +74,7 @@ return<Home/>
           {<About/>} */}
           {/* {<Image/>} */}
           {/* {<Contect2/>} */}
-          
+
         </header>
       </div>
     );
